@@ -39,9 +39,17 @@ A simple Blender addon to scale pixel art image sequences using nearest-neighbor
 ## Requirements
 
 - Blender 2.93+ (tested with 4.x)
-- No external installs required — Pillow is bundled
+- Python module: Pillow (PIL) for image processing
+  If not bundled (e.g. cloning from GitHub), install it manually:
 
----
+```
+# Windows / Mac / Linux (using Blender's Python)
+blender --background --python-expr "import ensurepip; ensurepip.bootstrap()" && \
+blender --background --python -m pip install Pillow
+
+```
+
+✅ Note: If you're downloading from the Releases section, Pillow is already bundled.
 
 ## Credits
 
